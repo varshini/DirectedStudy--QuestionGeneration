@@ -41,7 +41,10 @@ def getEventDetails(filename):
 	count2 = 0
 	filereader = open(filename)
 	lines = filereader.readlines()
+	# print lines
+
 	groups = [list(group) for group in grouper(3, lines)]
+	# print groups
 
 	return groups
 
